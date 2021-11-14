@@ -1,0 +1,16 @@
+<h3>Ajouter une techno à veiller</h3> 
+
+<form  #f="ngForm" (submit)="addTechno(f)">
+    <label for="technoname">Nom de la techno</label><br>
+    <input type="text"  id="technoname">
+    <label for="category">Categorie</label><br>
+    <select  id="category">
+        <option value=""></option>
+        <option value="Front">front</option>
+        <option value="back">back</option>
+        <option value="fullstack">fullstack</option>
+    </select><br>
+    <label for="details">Details</label><br>
+    <textarea  id="details" cols="30" rows="10"></textarea>
+    <button type="submit">Ajouter</button>
+</form>
